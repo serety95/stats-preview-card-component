@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@200;300;400&display=swap");
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.main-container {
+  background-color: hsl(233, 47%, 7%);
+  padding: 14vw 7vw;
+}
+.info {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 15px;
+  overflow: auto;
+}
+.background-img {
+  // background-color: hsl(277, 64%, 61%);
+  background: url(./assets/image-header-desktop.jpg) hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
+  height: 510px;
+  background-size: cover;
+   @media screen and (max-width: 375px) {
+    height: 238px;
+  }
+}
+.main-info {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  padding: 0 3rem;
+  text-align: center;
+  @media screen and (max-width: 375px) {
+    font-size: 24px;
+    padding: 0 20px;
+  }
+  .main-info-colored {
+    color: hsl(277, 64%, 61%);
+  }
+}
+.info-paragraph {
+  font-size: 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 0 4rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  @media screen and (max-width: 375px) {
+    font-size: 14px;
+    padding: 0 5px;
+    text-align: center;
+  }
+}
+.info-stats-container {
+  width: 80%;
+  padding: 0 10px;
+  .info-stats {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    @media screen and (max-width: 375px) {
+      align-items: center;
+      margin: 10px 0px;
+    }
+    .info-stats-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+      font-family: "Inter", sans-serif;
+      @media screen and (max-width: 375px) {
+        font-size: 20px;
+      }
+    }
+    .info-stats-value {
+      font-size: 16px;
+      color: hsla(0, 0%, 100%, 0.6);
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 300;
+      text-transform: capitalize;
+      @media screen and (max-width: 375px) {
+        font-size: 12px;
+      }
+    }
+  }
+}
